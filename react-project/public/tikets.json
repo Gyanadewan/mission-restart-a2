@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Login Authentication Error",
+    "description": "Customer cannot log in due to incorrect OTP verification issue.",
+    "customer": "Rahim Uddin",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-01"
+  },
+  {
+    "id": 2,
+    "title": "Payment Gateway Timeout",
+    "description": "Payment process stops during checkout and shows timeout error.",
+    "customer": "Nusrat Jahan",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-02"
+  },
+  {
+    "id": 3,
+    "title": "Profile Update Not Saving",
+    "description": "User changes profile information but it does not update.",
+    "customer": "Tanvir Hasan",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-02"
+  },
+  {
+    "id": 4,
+    "title": "Order Not Showing in Dashboard",
+    "description": "Customer placed order but cannot see it in order history.",
+    "customer": "Farhana Akter",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-03"
+  },
+  {
+    "id": 5,
+    "title": "Password Reset Email Not Received",
+    "description": "Customer requested password reset but email not delivered.",
+    "customer": "Sabbir Ahmed",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-03"
+  },
+  {
+    "id": 6,
+    "title": "App Crashes on Startup",
+    "description": "Mobile app crashes immediately after launching.",
+    "customer": "Mim Chowdhury",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-04"
+  },
+  {
+    "id": 7,
+    "title": "Invoice Download Failed",
+    "description": "Invoice PDF does not download from billing section.",
+    "customer": "Arif Hossain",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-04"
+  },
+  {
+    "id": 8,
+    "title": "Wrong Product Delivered",
+    "description": "Customer received incorrect product from recent order.",
+    "customer": "Jannat Islam",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-05"
+  },
+  {
+    "id": 9,
+    "title": "Coupon Code Not Applying",
+    "description": "Discount coupon shows invalid during checkout.",
+    "customer": "Mahmudul Karim",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-05"
+  },
+  {
+    "id": 10,
+    "title": "Slow Website Loading",
+    "description": "Website takes too long to load on mobile devices.",
+    "customer": "Sharmin Sultana",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-06"
+  },
+  {
+    "id": 11,
+    "title": "Refund Not Processed",
+    "description": "Refund request approved but amount not returned yet.",
+    "customer": "Imran Khan",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-06"
+  },
+  {
+    "id": 12,
+    "title": "Account Suspended Without Notice",
+    "description": "Customer account suspended without any prior warning.",
+    "customer": "Tania Rahman",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-07"
+  },
+  {
+    "id": 13,
+    "title": "Notification Not Working",
+    "description": "Push notifications are not appearing on Android device.",
+    "customer": "Rakib Hasan",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-07"
+  },
+  {
+    "id": 14,
+    "title": "Shipping Address Not Updating",
+    "description": "User unable to change shipping address before checkout.",
+    "customer": "Lamia Islam",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-08"
+  },
+  {
+    "id": 15,
+    "title": "Live Chat Support Not Responding",
+    "description": "Customer waiting for response in live chat for over 30 minutes.",
+    "customer": "Rafiq Mahmud",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-08"
+  }
+]
