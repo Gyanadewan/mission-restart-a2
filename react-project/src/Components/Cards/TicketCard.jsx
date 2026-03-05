@@ -11,6 +11,7 @@ function TicketCard({ticket,setInprogress,setSelectedTickets}) {
       <h2 className="card-title text-lg">{ticket.title}</h2>
        <button disabled={isOpen}
   onClick={() => {
+    alert("click Open button")
     setOpen(true)
     setInprogress(inProgress=>inProgress+1)
     setSelectedTickets(prev => [...prev, { id: ticket.id, title: ticket.title }])

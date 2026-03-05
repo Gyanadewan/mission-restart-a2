@@ -10,6 +10,7 @@ function App() {
   const [resolved,setResolved] = useState(0)
   const [selectedTickets, setSelectedTickets] = useState([])
   const [resolvedTickets, setResolvedTickets] = useState([])
+
   useEffect(() => {
     fetch("/tikets.json")
       .then((res) => res.json())
@@ -35,9 +36,9 @@ function App() {
        selectedTickets.map(t => (
       <div key={t.id} className="space-y-1">
       <p className='text-[#627382] px-2 py-1 bg-gray-100 rounded'>{t.title}</p>
-       <button
-    className="mt-1 w-full bg-green-500 text-white px-3 py-1 rounded"
+       <button className="mt-1 w-full bg-green-500 text-white px-3 py-1 rounded"
     onClick={() => {
+     alert ("click complete button")
     setResolved(prev => prev + 1)
     setInprogress(prev => prev - 1)
     setSelectedTickets(prev => prev.filter(s => s.id !== t.id))
