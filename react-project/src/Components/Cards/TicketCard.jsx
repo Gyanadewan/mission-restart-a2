@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FaCalendarAlt } from "react-icons/fa";
 
-function TicketCard({ticket,setInprogress,setSelectedTitle}) {
+function TicketCard({ticket,setInprogress,setSelectedTickets}) {
   const [isOpen,setOpen] = useState(false)
     console.log(ticket)
   return (
@@ -13,7 +13,7 @@ function TicketCard({ticket,setInprogress,setSelectedTitle}) {
   onClick={() => {
     setOpen(true)
     setInprogress(inProgress=>inProgress+1)
-    setSelectedTitle(prev => [...prev, ticket.title])
+    setSelectedTickets(prev => [...prev, { id: ticket.id, title: ticket.title }])
   }}
   className="flex items-center gap-2 text-sm text-[#0B5E06] font-medium bg-[#B9F8CF] px-3 py-1 rounded-full"
 >
