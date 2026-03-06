@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { FaCalendarAlt } from "react-icons/fa";
+import { toast } from 'react-toastify';
 
 function TicketCard({ticket,setInprogress,setSelectedTickets}) {
   const [isOpen,setOpen] = useState(false)
-    console.log(ticket)
+    // console.log(ticket)
   return (
         <div className="card card-border w-full bg-base-100 max-w-md mx-auto shadow-md">
   <div className="card-body p-4">
@@ -11,7 +12,7 @@ function TicketCard({ticket,setInprogress,setSelectedTickets}) {
       <h2 className="card-title text-lg">{ticket.title}</h2>
        <button disabled={isOpen}
   onClick={() => {
-    alert("click Open button")
+    toast("click Open button")
     setOpen(true)
     setInprogress(inProgress=>inProgress+1)
     setSelectedTickets(prev => [...prev, { id: ticket.id, title: ticket.title }])
@@ -19,7 +20,7 @@ function TicketCard({ticket,setInprogress,setSelectedTickets}) {
   className="flex items-center gap-2 text-sm text-[#0B5E06] font-medium bg-[#B9F8CF] px-3 py-1 rounded-full"
 >
   <span className="w-4 h-4 bg-[#02A53B] rounded-full"></span>
-  {isOpen ? "Open" : "Closed"}
+  {isOpen ? "Open" : "progress"}
 </button>
     </div>
 

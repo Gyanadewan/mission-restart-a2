@@ -3,7 +3,8 @@ import BannerCard from './Components/BannerCard'
 import Navbar from './Components/Navbar'
 import TicketsCard from './Components/Cards/TicketsCard';
 import Footer from './Components/footer/footer';
-
+ import { toast, ToastContainer} from 'react-toastify';
+ 
 function App() {
   const [tickets,setTickets]= useState([])
   const [inProgress,setInprogress] = useState(0)
@@ -20,7 +21,7 @@ function App() {
   }, [])
   
   return (
-    <>
+    <section>
     <Navbar></Navbar>
     <BannerCard inProgress={inProgress} resolved={resolved}></BannerCard>
      <div className="flex flex-row gap-4 px-4 mt-10">
@@ -38,7 +39,7 @@ function App() {
       <p className='text-[#627382] px-2 py-1 bg-gray-100 rounded'>{t.title}</p>
        <button className="mt-1 w-full bg-green-500 text-white px-3 py-1 rounded"
     onClick={() => {
-     alert ("click complete button")
+      toast("click complete button")
     setResolved(prev => prev + 1)
     setInprogress(prev => prev - 1)
     setSelectedTickets(prev => prev.filter(s => s.id !== t.id))
@@ -74,8 +75,8 @@ function App() {
       
     
      <Footer></Footer>
-       
-    </>
+       <ToastContainer /> 
+    </section>
   )
 }
 
